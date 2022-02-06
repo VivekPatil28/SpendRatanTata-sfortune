@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@1,200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+ 
+}
+.container{
+    margin: 0 10px;
+    padding-top:33px;
+    display: grid;
+    place-items: center;
+}
+#tata_sir{
+    height: 300px;
+}
+.container h1{
+    font-size:45px;
+    color: rgb(56, 56, 56);
+}
+.container p{
+    margin-top: 20px;
+    max-width: 900px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(71, 71, 71);
+}
+.container h2{
+    margin-top: 20px;
+    font-weight: 100;
+    color: rgb(71, 71, 71);
+}
+#spend_it{
+    color: rgb(37, 37, 37);
+    font-weight: 600;
+    
+}
+
+/* Stickey Container */
+#stickey_container{
+    box-sizing: border-box;
+    padding: 10px 5px;
+    position: sticky;
+    top: 0;
+    margin-top: 10vh;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    color: white;
+    align-items: center;
+    height:fit-content;
+    background:linear-gradient(
+        0deg,
+        #687178 0%,
+        #535a5f 100%
+        );
+        box-shadow: 0 0 40px 5px rgba(5, 5, 5, 0.507);
+        margin-bottom: 12vh;
+    
+    }
+    #amt{
+        font-weight: 700;
+        font-size: 35px;
+    }
+.remaining{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    user-select: none;
+    margin: 40px 10px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    height: 490px;
+    /* height: 540px; */
+    width: 370px;
+    overflow: hidden;
+    background: linear-gradient(0deg,
+            rgba(104, 113, 120, 1) 0%,
+            rgba(83, 90, 95, 1) 100%);
+    box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.342);
+}
+.purchase_sell {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+
+.buy_btn,
+.sell_btn {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.buy_btn {
+    background-color: rgb(117, 255, 117);
+}
+
+.content h1,
+h3 {
+    font-weight: 100;
+    margin: 5px 0;
+}
+
+.sell_btn {
+    background-color: rgb(255, 142, 142);
+    color: rgb(77, 77, 77);
+}
+
+.card img{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.imgcont {
+    height: 280px;
+    overflow: hidden;
+}
+.content{
+    height:176px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-flow: column;
+    padding: 10px 40px;
+}
+.price{
+    font-size: 25px;
+}
+.quantity {
+    font-size: 30px;
+}
+.card_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+footer{
+    height: 70px;
+    background-color: rgb(39, 39, 39);
+    color: rgb(240, 240, 240);
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+footer h4,footer h1{
+    text-align: center;
+    font-weight: 100;
+    width: 400px;
+}
+
+#icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+#icons a{
+    width: 20px;
+    text-align: center;
+    margin: 0 10px;
+    background-color: rgb(255, 255, 255);
+    padding:5px;
+    border-radius: 25%;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+    box-shadow: inset 0px 0px 5px rgb(92, 92, 92);
+    transition: .5s all;
+
+}
+#percentage{
+    text-align: center;
+}
+#icons a:hover{
+    color: rgba(0, 0, 228, 0.781);
+}
+
+@media screen and (max-width:600px) {
+    .container p{
+        text-align: left;
+    }
+    .remaining{
+        margin: 0;
+    }
+
+    .remaining h1{
+        font-size:25px;
+    }
+
+    .remaining h2:nth-child(1){
+        display: none;
+    }
+    #percentage{
+        margin: 10px;
+        font-size: 18px;
+        
+    }
+    #percentage span{
+        font-size: 22px;
+    }
+    .card{
+        width: 320px;
+        height: 400px;
+    }
+    .card img{
+
+        width: auto;
+        height: 110%;
+    
+    }
+    .card .imgcont{
+        height: 200px;
+    }
+    .card h1{
+        font-size: 25px;
+        font-weight: 400;
+    }
+.card .price{
+    font-size: 18px;
+}
+.buy_btn,
+.sell_btn{
+    padding: 15px;
+}
+
+}
+
